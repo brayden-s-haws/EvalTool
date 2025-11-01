@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EvalSwipe - AI Trace Review</title>
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="/static/css/main.css">
+    <link rel="stylesheet" href="/static/css/trace-card.css">
+    <link rel="stylesheet" href="/static/css/modal.css">
+    <link rel="stylesheet" href="/static/css/progress.css">
+</head>
+<body>
+    <!-- Main Container -->
+    <div id="app" class="app-container">
+        <!-- Header -->
+        <header class="app-header">
+            <div class="header-content">
+                <h1 class="app-title">EvalSwipe</h1>
+                <nav class="main-nav">
+                    <button id="new-session-btn" class="nav-btn">New Session</button>
+                    <button id="load-session-btn" class="nav-btn">Load Session</button>
+                    <button id="view-history-btn" class="nav-btn">View History</button>
+                    <button id="prompt-improvement-btn" class="nav-btn">Prompt Improvement</button>
+                    <button id="settings-btn" class="nav-btn">Settings</button>
+                </nav>
+            </div>
+        </header>
+
+        <!-- Progress Tracker -->
+        <div id="progress-tracker" class="progress-tracker hidden">
+            <div class="progress-info">
+                <span id="progress-text">0 of 0 traces reviewed (0%)</span>
+                <div class="progress-counts">
+                    <span class="count-item pass">✓ <span id="pass-count">0</span></span>
+                    <span class="count-item fail">✗ <span id="fail-count">0</span></span>
+                    <span class="count-item defer">⟳ <span id="defer-count">0</span></span>
+                </div>
+            </div>
+            <div class="progress-bar-container">
+                <div id="progress-bar" class="progress-bar" style="width: 0%"></div>
+            </div>
+        </div>
+
+        <!-- Main Content Area -->
+        <main id="main-content" class="main-content">
+            <!-- Welcome Screen (shown initially) -->
+            <div id="welcome-screen" class="welcome-screen">
+                <div class="welcome-content">
+                    <h2>Welcome to EvalSwipe</h2>
+                    <p>A systematic approach to AI trace evaluation using open and axial coding.</p>
+
+                    <div class="welcome-actions">
+                        <div class="action-card">
+                            <h3>Try Demo Data</h3>
+                            <p>Explore with 50 sample snack recommendation traces</p>
+                            <button id="load-demo-btn" class="primary-btn">Load Demo</button>
+                        </div>
+
+                        <div class="action-card">
+                            <h3>Import from Braintrust</h3>
+                            <p>Fetch traces directly from your Braintrust experiments</p>
+                            <button id="import-braintrust-btn" class="primary-btn">Import</button>
+                        </div>
+
+                        <div class="action-card">
+                            <h3>Upload JSON</h3>
+                            <p>Load traces from a local JSON file</p>
+                            <input type="file" id="upload-json-input" accept=".json" style="display: none">
+                            <button id="upload-json-btn" class="primary-btn">Upload</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Trace Review Interface (hidden initially) -->
+            <div id="review-interface" class="review-interface hidden">
+                <!-- Trace Card -->
+                <div id="trace-card" class="trace-card">
+                    <div class="trace-header">
+                        <span id="trace-id" class="trace-id">trace_001</span>
+                        <span id="trace-number" class="trace-number">1 / 50</span>
+                    </div>
+
+                    <div class="trace-content">
+                        <!-- User Input -->
+                        <div class="trace-section user-input">
+                            <h3 class="section-label">User Input</h3>
+                            <div id="user-input-content" class="section-content">
+                                <!-- Content loaded dynamically -->
+                            </div>
+                        </div>
+
+                        <!-- Agent Output -->
+                        <div class="trace-section agent-output">
+                            <h3 class="section-label">Agent Output</h3>
+                            <div id="agent-output-content" class="section-content">
+                                <!-- Content loaded dynamically -->
+                            </div>
+                        </div>
+
+                        <!-- Expandable Details -->
+                        <div class="trace-details">
+                            <button id="toggle-details-btn" class="toggle-details-btn">
+                                Show Details ▼
+                            </button>
+
+                            <div id="trace-details-content" class="details-content hidden">
+                                <!-- System Prompt -->
+                                <div class="detail-section">
+                                    <h4 class="detail-label">System Prompt</h4>
+                                    <div id="system-prompt-content" class="detail-content">
+                                        <!-- Content loaded dynamically -->
+                                    </div>
+                                </div>
+
+                                <!-- Intermediate Steps -->
+                                <div class="detail-section">
+                                    <h4 class="detail-label">Intermediate Steps</h4>
+                                    <div id="intermediate-steps-content" class="detail-content">
+                                        <!-- Content loaded dynamically -->
+                                    </div>
+                                </div>
+
+                                <!-- Metadata -->
+                                <div class="detail-section">
+                                    <h4 class="detail-label">Metadata</h4>
+                                    <div id="metadata-content" class="detail-content">
+                                        <!-- Content loaded dynamically -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Action Buttons -->
+                    <div class="trace-actions">
+                        <button id="fail-btn" class="action-btn fail-btn" title="Mark as Fail (F or ←)">
+                            ✗ Fail
+                        </button>
+                        <button id="defer-btn" class="action-btn defer-btn" title="Defer (D or ↑)">
+                            ⟳ Defer
+                        </button>
+                        <button id="pass-btn" class="action-btn pass-btn" title="Mark as Pass (P or →)">
+                            ✓ Pass
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Navigation Controls -->
+                <div class="navigation-controls">
+                    <button id="prev-btn" class="nav-control-btn">← Previous</button>
+                    <button id="next-btn" class="nav-control-btn">Next →</button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Modals -->
+    <!-- Open Coding Modal -->
+    <div id="open-coding-modal" class="modal hidden">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>What went wrong in this trace?</h2>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p class="modal-guidance">
+                    Describe the first significant failure you observed. Be specific about what happened and why it's problematic.
+                </p>
+                <textarea
+                    id="open-code-textarea"
+                    class="open-code-textarea"
+                    placeholder="Focus on the upstream failure that likely caused downstream issues..."
+                    rows="8"
+                ></textarea>
+                <div class="character-counter">
+                    <span id="char-count">0</span> characters (recommended: 50-500)
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button id="tag-now-btn" class="btn secondary-btn">Tag Now</button>
+                <button id="tag-later-btn" class="btn primary-btn">Tag Later & Continue</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Axial Coding Modal -->
+    <div id="axial-coding-modal" class="modal hidden">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Apply Axial Tags</h2>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <p class="modal-guidance">
+                    Select one or more tags that describe this failure. You can create a new tag if needed.
+                </p>
+
+                <div class="tag-creation">
+                    <button id="create-tag-btn" class="btn secondary-btn">+ Create New Tag</button>
+                </div>
+
+                <div id="tag-library" class="tag-library">
+                    <!-- Tags loaded dynamically -->
+                </div>
+
+                <div id="tag-creation-form" class="tag-creation-form hidden">
+                    <input
+                        type="text"
+                        id="new-tag-name"
+                        class="form-input"
+                        placeholder="Tag name (2-30 characters)"
+                        maxlength="30"
+                    >
+                    <textarea
+                        id="new-tag-description"
+                        class="form-input"
+                        placeholder="Tag description (20-200 characters)"
+                        rows="3"
+                        maxlength="200"
+                    ></textarea>
+                    <input
+                        type="color"
+                        id="new-tag-color"
+                        class="color-picker"
+                        value="#808080"
+                    >
+                    <div class="form-actions">
+                        <button id="cancel-tag-btn" class="btn secondary-btn">Cancel</button>
+                        <button id="save-tag-btn" class="btn primary-btn">Save Tag</button>
+                    </div>
+                </div>
+
+                <div id="selected-tags" class="selected-tags">
+                    <!-- Selected tags shown here -->
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button id="apply-tags-btn" class="btn primary-btn">Apply Tags & Continue</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Braintrust Import Modal -->
+    <div id="braintrust-modal" class="modal hidden">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Import from Braintrust</h2>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label for="bt-api-key">API Key (optional if set in .env)</label>
+                    <input type="password" id="bt-api-key" class="form-input" placeholder="bt-...">
+                </div>
+                <div class="form-group">
+                    <label for="bt-project-id">Project ID</label>
+                    <input type="text" id="bt-project-id" class="form-input" placeholder="proj-...">
+                </div>
+                <div class="form-group">
+                    <label for="bt-experiment-id">Experiment ID</label>
+                    <input type="text" id="bt-experiment-id" class="form-input" placeholder="exp-...">
+                </div>
+                <div class="form-group">
+                    <label for="bt-limit">Limit (max traces)</label>
+                    <input type="number" id="bt-limit" class="form-input" value="100" min="1" max="1000">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button id="fetch-traces-btn" class="btn primary-btn">Fetch Traces</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Prompt Improvement Modal -->
+    <div id="prompt-improvement-modal" class="modal hidden">
+        <div class="modal-content large">
+            <div class="modal-header">
+                <h2>Prompt Improvement Tool</h2>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label for="current-prompt">Current System Prompt</label>
+                    <textarea id="current-prompt" class="form-input" rows="8" placeholder="Paste your current system prompt here..."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label>Target Failure Modes</label>
+                    <div id="failure-modes-list" class="tag-library">
+                        <!-- Tags loaded dynamically -->
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="additional-context">Additional Context (optional)</label>
+                    <textarea id="additional-context" class="form-input" rows="4" placeholder="Any extra guidance for the improvement suggestions..."></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="num-suggestions">Number of Suggestions</label>
+                    <input type="number" id="num-suggestions" class="form-input" value="3" min="1" max="5">
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button id="generate-suggestions-btn" class="btn primary-btn">Generate Suggestions</button>
+            </div>
+
+            <div id="suggestions-container" class="suggestions-container hidden">
+                <!-- Suggestions loaded dynamically -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Settings Modal -->
+    <div id="settings-modal" class="modal hidden">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2>Settings</h2>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label for="reviewer-id">Reviewer ID</label>
+                    <input type="text" id="reviewer-id" class="form-input" placeholder="your.email@example.com">
+                </div>
+
+                <div class="form-group">
+                    <label for="anthropic-key">Anthropic API Key (Optional)</label>
+                    <input type="password" id="anthropic-key" class="form-input" placeholder="sk-ant-...">
+                    <small style="color: var(--color-text-light);">For prompt improvement features. Also can be set in .env file.</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="braintrust-key">Braintrust API Key (Optional)</label>
+                    <input type="password" id="braintrust-key" class="form-input" placeholder="bt-...">
+                    <small style="color: var(--color-text-light);">For Braintrust integration. Also can be set in .env file.</small>
+                </div>
+
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" id="randomize-traces"> Randomize trace order
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" id="auto-save" checked> Auto-save session
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <button id="clear-session-btn" class="btn secondary-btn">Clear Current Session</button>
+                    <button id="export-session-btn" class="btn secondary-btn">Export Session</button>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button id="save-settings-btn" class="btn primary-btn">Save Settings</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Trace History View -->
+    <div id="history-view" class="modal hidden">
+        <div class="modal-content large">
+            <div class="modal-header">
+                <h2>Trace History</h2>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="history-filters">
+                    <label>
+                        Filter by:
+                        <select id="history-filter">
+                            <option value="all">All Traces</option>
+                            <option value="pass">Pass Only</option>
+                            <option value="fail">Fail Only</option>
+                            <option value="defer">Defer Only</option>
+                            <option value="unreviewed">Unreviewed Only</option>
+                        </select>
+                    </label>
+                    <label>
+                        Sort by:
+                        <select id="history-sort">
+                            <option value="index">Trace Order</option>
+                            <option value="recent">Recently Reviewed</option>
+                            <option value="status">Status</option>
+                        </select>
+                    </label>
+                </div>
+
+                <div id="history-stats" class="history-stats">
+                    <!-- Stats populated dynamically -->
+                </div>
+
+                <div id="history-list" class="history-list">
+                    <!-- Trace history items populated dynamically -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Loading Overlay -->
+    <div id="loading-overlay" class="loading-overlay hidden">
+        <div class="loading-spinner"></div>
+        <p id="loading-text">Loading...</p>
+    </div>
+
+    <!-- Toast Notifications -->
+    <div id="toast-container" class="toast-container"></div>
+
+    <!-- JavaScript Modules -->
+    <script src="/static/js/api-client.js"></script>
+    <script src="/static/js/trace-manager.js"></script>
+    <script src="/static/js/annotation-manager.js"></script>
+    <script src="/static/js/tag-manager.js"></script>
+    <script src="/static/js/session-manager.js"></script>
+    <script src="/static/js/ui-controller.js"></script>
+    <script src="/static/js/keyboard-handler.js"></script>
+    <script src="/static/js/export-handler.js"></script>
+    <script src="/static/js/app.js"></script>
+</body>
+</html>

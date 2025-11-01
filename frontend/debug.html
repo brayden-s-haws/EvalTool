@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Debug Page</title>
+    <style>
+        body { font-family: Arial; padding: 40px; background: #f0f0f0; }
+        .test { padding: 20px; margin: 10px 0; background: white; border-radius: 8px; }
+        .pass { border-left: 4px solid green; }
+        .fail { border-left: 4px solid red; }
+    </style>
+</head>
+<body>
+    <h1>EvalSwipe Debug Page</h1>
+
+    <div class="test pass" id="test1">
+        <h3>✓ Test 1: HTML Loading</h3>
+        <p>If you can see this, HTML is loading correctly.</p>
+    </div>
+
+    <div class="test" id="test2">
+        <h3>⏳ Test 2: JavaScript Execution</h3>
+        <p id="js-test">Waiting for JavaScript...</p>
+    </div>
+
+    <div class="test" id="test3">
+        <h3>⏳ Test 3: App.js Loading</h3>
+        <p id="app-test">Checking...</p>
+    </div>
+
+    <button onclick="testAPI()">Test API Connection</button>
+    <div class="test" id="test4">
+        <h3>⏳ Test 4: API Connection</h3>
+        <p id="api-test">Click button to test</p>
+    </div>
+
+    <hr>
+    <p><a href="/">← Back to EvalSwipe</a></p>
+
+    <script>
+        // Test 2
+        document.getElementById('js-test').textContent = '✓ JavaScript is working!';
+        document.getElementById('test2').classList.add('pass');
+
+        // Test 3
+        setTimeout(() => {
+            if (window.evalSwipeApp) {
+                document.getElementById('app-test').textContent = '✓ App initialized successfully!';
+                document.getElementById('test3').classList.add('pass');
+            } else {
+                document.getElementById('app-test').textContent = '✗ App NOT initialized - check console for errors';
+                document.getElementById('test3').classList.add('fail');
+            }
+        }, 1000);
+
+        // Test 4
+        async function testAPI() {
+            const result = document.getElementById('api-test');
+            try {
+                const response = await fetch('/health');
+                const data = await response.json();
+                result.textContent = '✓ API working: ' + JSON.stringify(data);
+                document.getElementById('test4').classList.add('pass');
+            } catch (error) {
+                result.textContent = '✗ API error: ' + error.message;
+                document.getElementById('test4').classList.add('fail');
+            }
+        }
+    </script>
+
+    <!-- Load app.js to test if it breaks -->
+    <script src="/static/js/api-client.js"></script>
+    <script src="/static/js/app.js"></script>
+</body>
+</html>

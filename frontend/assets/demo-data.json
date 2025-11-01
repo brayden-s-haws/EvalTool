@@ -1,0 +1,654 @@
+{
+  "traces": [
+    {
+      "id": "trace_001",
+      "user_input": "I love spicy kettle chips with a crunchy texture. What else would I like?",
+      "agent_output": "Based on your love for spicy kettle chips, here are some recommendations:\n\n1. **Takis Fuego** - These rolled corn tortilla chips pack serious heat with lime and chili pepper seasoning, maintaining that satisfying crunch\n2. **Spicy Sweet Chili Doritos** - Combines sweet and spicy flavors with that classic Doritos crunch you'll enjoy\n3. **Paqui Haunted Ghost Pepper Chips** - For extreme heat lovers, these kettle-cooked chips deliver intense spiciness with a similar texture to what you already enjoy",
+      "system_prompt": "You are a helpful snack recommendation assistant. When users describe a snack they enjoy, suggest 2-4 similar snacks they might like. Explain why each recommendation matches their preferences.",
+      "intermediate_steps": [],
+      "metadata": {
+        "model_version": "claude-sonnet-4",
+        "latency_ms": 1250,
+        "token_count": 150,
+        "timestamp": "2025-01-15T10:30:00Z"
+      }
+    },
+    {
+      "id": "trace_002",
+      "user_input": "I'm into sweet and salty combos, like chocolate covered pretzels.",
+      "agent_output": "Perfect! Here are some sweet-salty treats you'll love:\n\n1. **Snyder's of Hanover Chocolate Covered Pretzels** - Similar to what you already enjoy, with a perfect sweet-salty balance\n2. **Trail mix with M&Ms and peanuts** - Gets that sweet-salty combo with added variety\n3. **Salted caramel popcorn** - Another great sweet-salty option with satisfying crunch",
+      "system_prompt": "You are a helpful snack recommendation assistant. When users describe a snack they enjoy, suggest 2-4 similar snacks they might like. Explain why each recommendation matches their preferences.",
+      "intermediate_steps": [],
+      "metadata": {
+        "model_version": "claude-sonnet-4",
+        "latency_ms": 1100,
+        "token_count": 130,
+        "timestamp": "2025-01-15T10:31:00Z"
+      }
+    },
+    {
+      "id": "trace_003",
+      "user_input": "Need a healthy protein snack for post-workout, preferably plant-based.",
+      "agent_output": "Great choices for post-workout: Greek yogurt, beef jerky, or hard-boiled eggs. All are high in protein and easy to prep!",
+      "system_prompt": "You are a helpful snack recommendation assistant. When users describe a snack they enjoy, suggest 2-4 similar snacks they might like. Explain why each recommendation matches their preferences.",
+      "intermediate_steps": [],
+      "metadata": {
+        "model_version": "claude-sonnet-4",
+        "latency_ms": 950,
+        "token_count": 85,
+        "timestamp": "2025-01-15T10:32:00Z"
+      }
+    },
+    {
+      "id": "trace_004",
+      "user_input": "I like dark chocolate. What should I try?",
+      "agent_output": "Try Lindt Excellence 90% Cacao bars - they're sugar-free and have a smooth, creamy texture that melts in your mouth.",
+      "system_prompt": "You are a helpful snack recommendation assistant. When users describe a snack they enjoy, suggest 2-4 similar snacks they might like. Explain why each recommendation matches their preferences.",
+      "intermediate_steps": [],
+      "metadata": {
+        "model_version": "claude-sonnet-4",
+        "latency_ms": 800,
+        "token_count": 75,
+        "timestamp": "2025-01-15T10:33:00Z"
+      }
+    },
+    {
+      "id": "trace_005",
+      "user_input": "What's a good salty snack for movie night?",
+      "agent_output": "For movie night, I'd recommend ordering pizza or making nachos with plenty of cheese. Both are crowd-pleasers and perfect for sharing!",
+      "system_prompt": "You are a helpful snack recommendation assistant. When users describe a snack they enjoy, suggest 2-4 similar snacks they might like. Explain why each recommendation matches their preferences.",
+      "intermediate_steps": [],
+      "metadata": {
+        "model_version": "claude-sonnet-4",
+        "latency_ms": 900,
+        "token_count": 90,
+        "timestamp": "2025-01-15T10:34:00Z"
+      }
+    },
+    {
+      "id": "trace_006",
+      "user_input": "yo what's a good chip for munching while gaming",
+      "agent_output": "I would recommend procuring a bag of Kettle Brand Himalayan Salt Potato Chips. Their refined flavor profile and superior crunch acoustics make them ideal for consumption during interactive digital entertainment sessions.",
+      "system_prompt": "You are a helpful snack recommendation assistant. When users describe a snack they enjoy, suggest 2-4 similar snacks they might like. Explain why each recommendation matches their preferences.",
+      "intermediate_steps": [],
+      "metadata": {
+        "model_version": "claude-sonnet-4",
+        "latency_ms": 1050,
+        "token_count": 95,
+        "timestamp": "2025-01-15T10:35:00Z"
+      }
+    },
+    {
+      "id": "trace_007",
+      "user_input": "I'm allergic to nuts but love trail mix. What can I eat instead?",
+      "agent_output": "Try: dried fruit mix, granola, seeds",
+      "system_prompt": "You are a helpful snack recommendation assistant. When users describe a snack they enjoy, suggest 2-4 similar snacks they might like. Explain why each recommendation matches their preferences.",
+      "intermediate_steps": [],
+      "metadata": {
+        "model_version": "claude-sonnet-4",
+        "latency_ms": 700,
+        "token_count": 45,
+        "timestamp": "2025-01-15T10:36:00Z"
+      }
+    },
+    {
+      "id": "trace_008",
+      "user_input": "Looking for crunchy snacks without too much salt",
+      "agent_output": "Here are some great low-salt crunchy options:\n\n1. **Unsalted pretzels** - All the crunch, minimal sodium\n2. **Rice cakes** - Super crunchy and available in lightly salted varieties\n3. **Popcorn** - Pop your own and control the salt level\n4. **Raw vegetables with hummus** - Carrots and celery give great crunch naturally",
+      "system_prompt": "You are a helpful snack recommendation assistant. When users describe a snack they enjoy, suggest 2-4 similar snacks they might like. Explain why each recommendation matches their preferences.",
+      "intermediate_steps": [],
+      "metadata": {
+        "model_version": "claude-sonnet-4",
+        "latency_ms": 1150,
+        "token_count": 135,
+        "timestamp": "2025-01-15T10:37:00Z"
+      }
+    },
+    {
+      "id": "trace_009",
+      "user_input": "I love cheese and crackers. Any similar snacks?",
+      "agent_output": "You'll enjoy these cheese-forward snacks:\n\n1. **Cheese crisps (Whisps, Moon Cheese)** - 100% cheese, super crunchy\n2. **String cheese with whole grain crackers** - Similar concept, portable format\n3. **Mini Babybel cheese wheels** - Great for on-the-go\n4. **Cheese & charcuterie snack packs** - Pre-portioned convenience",
+      "system_prompt": "You are a helpful snack recommendation assistant. When users describe a snack they enjoy, suggest 2-4 similar snacks they might like. Explain why each recommendation matches their preferences.",
+      "intermediate_steps": [],
+      "metadata": {
+        "model_version": "claude-sonnet-4",
+        "latency_ms": 1200,
+        "token_count": 145,
+        "timestamp": "2025-01-15T10:38:00Z"
+      }
+    },
+    {
+      "id": "trace_010",
+      "user_input": "What are some good sweet snacks that aren't too unhealthy?",
+      "agent_output": "Here are some healthier sweet options:\n\n1. **Dark chocolate (70%+ cacao)** - Antioxidants and less sugar than milk chocolate\n2. **Dates stuffed with almond butter** - Natural sweetness with protein and fiber\n3. **Fresh berries with Greek yogurt** - Satisfies sweet cravings with added protein\n4. **Apple slices with peanut butter** - Natural sugars balanced with protein",
+      "system_prompt": "You are a helpful snack recommendation assistant. When users describe a snack they enjoy, suggest 2-4 similar snacks they might like. Explain why each recommendation matches their preferences.",
+      "intermediate_steps": [],
+      "metadata": {
+        "model_version": "claude-sonnet-4",
+        "latency_ms": 1300,
+        "token_count": 155,
+        "timestamp": "2025-01-15T10:39:00Z"
+      }
+    },
+    {
+      "id": "trace_011",
+      "user_input": "I need snacks for a long road trip. Suggestions?",
+      "agent_output": "Perfect road trip snacks that travel well:\n\n1. **Mixed nuts** - Protein-packed and won't make a mess\n2. **Beef jerky or turkey jerky** - Filling and doesn't need refrigeration\n3. **Granola bars** - Easy to eat while driving\n4. **Dried fruit** - Sweet energy boost that's non-perishable",
+      "system_prompt": "You are a helpful snack recommendation assistant. When users describe a snack they enjoy, suggest 2-4 similar snacks they might like. Explain why each recommendation matches their preferences.",
+      "intermediate_steps": [],
+      "metadata": {
+        "model_version": "claude-sonnet-4",
+        "latency_ms": 1150,
+        "token_count": 130,
+        "timestamp": "2025-01-15T10:40:00Z"
+      }
+    },
+    {
+      "id": "trace_012",
+      "user_input": "I love sour candy. What else would I like?",
+      "agent_output": "For sour candy fans:\n\n1. **Sour Patch Kids** - Classic sour-then-sweet combination\n2. **Warheads** - Extreme sour that mellows to sweet\n3. **Sour gummy worms** - Chewy texture with tangy coating\n4. **Freeze-dried sour fruits** - Intensely sour natural option",
+      "system_prompt": "You are a helpful snack recommendation assistant. When users describe a snack they enjoy, suggest 2-4 similar snacks they might like. Explain why each recommendation matches their preferences.",
+      "intermediate_steps": [],
+      "metadata": {
+        "model_version": "claude-sonnet-4",
+        "latency_ms": 1000,
+        "token_count": 120,
+        "timestamp": "2025-01-15T10:41:00Z"
+      }
+    },
+    {
+      "id": "trace_013",
+      "user_input": "Looking for gluten-free chip alternatives",
+      "agent_output": "Great gluten-free chip options:\n\n1. **Siete tortilla chips** - Made from cassava and avocado oil\n2. **Beanitos** - Black bean or pinto bean based chips\n3. **Late July organic tortilla chips** - Certified gluten-free corn chips\n4. **Jackson's sweet potato chips** - Made with coconut oil, naturally GF",
+      "system_prompt": "You are a helpful snack recommendation assistant. When users describe a snack they enjoy, suggest 2-4 similar snacks they might like. Explain why each recommendation matches their preferences.",
+      "intermediate_steps": [],
+      "metadata": {
+        "model_version": "claude-sonnet-4",
+        "latency_ms": 1250,
+        "token_count": 140,
+        "timestamp": "2025-01-15T10:42:00Z"
+      }
+    },
+    {
+      "id": "trace_014",
+      "user_input": "I want something filling that's not too heavy before bed",
+      "agent_output": "Light but filling evening snacks:\n\n1. **Cottage cheese with berries** - High protein, won't weigh you down\n2. **Air-popped popcorn** - Filling volume, low calories\n3. **Greek yogurt parfait** - Protein and probiotics for sleep\n4. **Sliced turkey and cheese roll-ups** - Protein without carb crash",
+      "system_prompt": "You are a helpful snack recommendation assistant. When users describe a snack they enjoy, suggest 2-4 similar snacks they might like. Explain why each recommendation matches their preferences.",
+      "intermediate_steps": [],
+      "metadata": {
+        "model_version": "claude-sonnet-4",
+        "latency_ms": 1100,
+        "token_count": 125,
+        "timestamp": "2025-01-15T10:43:00Z"
+      }
+    },
+    {
+      "id": "trace_015",
+      "user_input": "Best snacks for kids' lunchboxes?",
+      "agent_output": "Kid-friendly lunch box snacks:\n\n1. **String cheese** - Protein, calcium, fun to eat\n2. **Apple slices with peanut butter packets** - Natural and filling\n3. **Mini rice cakes** - Light, crunchy, come in fun flavors\n4. **Veggie straws** - Healthier than regular chips\n5. **Mini pretzels** - Classic kid favorite",
+      "system_prompt": "You are a helpful snack recommendation assistant. When users describe a snack they enjoy, suggest 2-4 similar snacks they might like. Explain why each recommendation matches their preferences.",
+      "intermediate_steps": [],
+      "metadata": {
+        "model_version": "claude-sonnet-4",
+        "latency_ms": 1200,
+        "token_count": 135,
+        "timestamp": "2025-01-15T10:44:00Z"
+      }
+    },
+    {
+      "id": "trace_016",
+      "user_input": "I like BBQ flavored chips, what else?",
+      "agent_output": "BBQ flavor lovers will enjoy:\n\n1. **BBQ pork rinds** - Intense BBQ flavor, high protein, zero carb\n2. **BBQ roasted chickpeas** - Crunchy, protein-rich, healthier option\n3. **BBQ popcorn** - Light version of that smoky flavor\n4. **BBQ almonds** - Nutty with BBQ seasoning twist",
+      "system_prompt": "You are a helpful snack recommendation assistant. When users describe a snack they enjoy, suggest 2-4 similar snacks they might like. Explain why each recommendation matches their preferences.",
+      "intermediate_steps": [],
+      "metadata": {
+        "model_version": "claude-sonnet-4",
+        "latency_ms": 1050,
+        "token_count": 115,
+        "timestamp": "2025-01-15T10:45:00Z"
+      }
+    },
+    {
+      "id": "trace_017",
+      "user_input": "What are the healthiest convenience store snacks?",
+      "agent_output": "Healthy convenience store finds:\n\n1. **Unsalted mixed nuts** - Protein and healthy fats\n2. **KIND bars** - Whole nuts and minimal processing\n3. **Fresh fruit** - Bananas, apples usually available\n4. **String cheese** - Portable protein\n5. **Roasted edamame** - High protein, low calorie",
+      "system_prompt": "You are a helpful snack recommendation assistant. When users describe a snack they enjoy, suggest 2-4 similar snacks they might like. Explain why each recommendation matches their preferences.",
+      "intermediate_steps": [],
+      "metadata": {
+        "model_version": "claude-sonnet-4",
+        "latency_ms": 1150,
+        "token_count": 130,
+        "timestamp": "2025-01-15T10:46:00Z"
+      }
+    },
+    {
+      "id": "trace_018",
+      "user_input": "I'm trying to cut back on sugar. Snack ideas?",
+      "agent_output": "Low-sugar snack options:\n\n1. **Celery with almond butter** - Minimal natural sugars\n2. **Hard-boiled eggs** - Zero sugar, high protein\n3. **Cherry tomatoes with mozzarella** - Savory, satisfying\n4. **Pumpkin seeds** - Crunchy, nearly sugar-free\n5. **Sugar-free jerky** - Check labels for varieties without added sugar",
+      "system_prompt": "You are a helpful snack recommendation assistant. When users describe a snack they enjoy, suggest 2-4 similar snacks they might like. Explain why each recommendation matches their preferences.",
+      "intermediate_steps": [],
+      "metadata": {
+        "model_version": "claude-sonnet-4",
+        "latency_ms": 1200,
+        "token_count": 140,
+        "timestamp": "2025-01-15T10:47:00Z"
+      }
+    },
+    {
+      "id": "trace_019",
+      "user_input": "What can I snack on that has lots of fiber?",
+      "agent_output": "High-fiber snacks:\n\n1. **Fiber One bars** - 9g fiber per bar\n2. **Raspberries or blackberries** - 8g fiber per cup\n3. **Chia pudding** - 10g fiber per serving\n4. **Hummus with raw veggies** - Chickpeas are fiber-rich\n5. **Air-popped popcorn** - Whole grain with good fiber",
+      "system_prompt": "You are a helpful snack recommendation assistant. When users describe a snack they enjoy, suggest 2-4 similar snacks they might like. Explain why each recommendation matches their preferences.",
+      "intermediate_steps": [],
+      "metadata": {
+        "model_version": "claude-sonnet-4",
+        "latency_ms": 1100,
+        "token_count": 125,
+        "timestamp": "2025-01-15T10:48:00Z"
+      }
+    },
+    {
+      "id": "trace_020",
+      "user_input": "I love spicy snacks but my stomach is sensitive",
+      "agent_output": "Mild spicy options for sensitive stomachs:\n\n1. **Lightly spiced hummus with crackers** - Flavor without heat\n2. **Jalapeño potato chips (not the hot ones)** - Mild jalapeño flavor\n3. **Mild salsa with tortilla chips** - Control the heat level\n4. **Buffalo pretzels** - Spice coating is milder than chips",
+      "system_prompt": "You are a helpful snack recommendation assistant. When users describe a snack they enjoy, suggest 2-4 similar snacks they might like. Explain why each recommendation matches their preferences.",
+      "intermediate_steps": [],
+      "metadata": {
+        "model_version": "claude-sonnet-4",
+        "latency_ms": 1150,
+        "token_count": 135,
+        "timestamp": "2025-01-15T10:49:00Z"
+      }
+    },
+    {
+      "id": "trace_021",
+      "user_input": "Best snacks for hiking?",
+      "agent_output": "Trail-tested hiking snacks:\n\n1. **Trail mix** - Classic energy mix of nuts, dried fruit, chocolate\n2. **Energy bars** - Compact calories for sustained energy\n3. **Beef jerky** - Protein that won't spoil\n4. **Dried mango** - Natural sugars for quick energy\n5. **Nut butter packets** - Portable protein and healthy fats",
+      "system_prompt": "You are a helpful snack recommendation assistant. When users describe a snack they enjoy, suggest 2-4 similar snacks they might like. Explain why each recommendation matches their preferences.",
+      "intermediate_steps": [],
+      "metadata": {
+        "model_version": "claude-sonnet-4",
+        "latency_ms": 1250,
+        "token_count": 145,
+        "timestamp": "2025-01-15T10:50:00Z"
+      }
+    },
+    {
+      "id": "trace_022",
+      "user_input": "What's a good sweet treat that's also nutritious?",
+      "agent_output": "Nutritious sweet treats:\n\n1. **Medjool dates** - Natural sweetness plus fiber and potassium\n2. **Dark chocolate (85%+)** - Antioxidants with minimal sugar\n3. **Frozen banana slices** - Like ice cream but just fruit\n4. **Energy balls** - Dates, nuts, cocoa combine for healthy sweets",
+      "system_prompt": "You are a helpful snack recommendation assistant. When users describe a snack they enjoy, suggest 2-4 similar snacks they might like. Explain why each recommendation matches their preferences.",
+      "intermediate_steps": [],
+      "metadata": {
+        "model_version": "claude-sonnet-4",
+        "latency_ms": 1100,
+        "token_count": 130,
+        "timestamp": "2025-01-15T10:51:00Z"
+      }
+    },
+    {
+      "id": "trace_023",
+      "user_input": "I need something quick and easy for busy mornings",
+      "agent_output": "Grab-and-go morning snacks:\n\n1. **Pre-portioned nut butter packets with banana** - 30 seconds to eat\n2. **Overnight oats in a jar** - Made ahead, eat cold\n3. **Protein shake** - Blend and go\n4. **Granola bars** - Keep in your bag\n5. **Hard-boiled eggs** - Prep on Sunday for the week",
+      "system_prompt": "You are a helpful snack recommendation assistant. When users describe a snack they enjoy, suggest 2-4 similar snacks they might like. Explain why each recommendation matches their preferences.",
+      "intermediate_steps": [],
+      "metadata": {
+        "model_version": "claude-sonnet-4",
+        "latency_ms": 1200,
+        "token_count": 140,
+        "timestamp": "2025-01-15T10:52:00Z"
+      }
+    },
+    {
+      "id": "trace_024",
+      "user_input": "Looking for keto-friendly snacks",
+      "agent_output": "Keto snack options:\n\n1. **Cheese crisps** - Zero carb, all protein\n2. **Pork rinds** - Crunchy, zero carb\n3. **Macadamia nuts** - Lowest carb nut option\n4. **Pepperoni slices** - Easy protein snack\n5. **Celery with cream cheese** - Under 2g carbs",
+      "system_prompt": "You are a helpful snack recommendation assistant. When users describe a snack they enjoy, suggest 2-4 similar snacks they might like. Explain why each recommendation matches their preferences.",
+      "intermediate_steps": [],
+      "metadata": {
+        "model_version": "claude-sonnet-4",
+        "latency_ms": 1050,
+        "token_count": 120,
+        "timestamp": "2025-01-15T10:53:00Z"
+      }
+    },
+    {
+      "id": "trace_025",
+      "user_input": "What are good snacks for staying focused while studying?",
+      "agent_output": "Brain-boosting study snacks:\n\n1. **Blueberries** - Antioxidants support memory\n2. **Dark chocolate covered almonds** - Healthy fats for brain function\n3. **Apple slices with peanut butter** - Sustained energy without crash\n4. **Mixed nuts** - Omega-3s and protein\n5. **Green tea with honey** - L-theanine helps focus",
+      "system_prompt": "You are a helpful snack recommendation assistant. When users describe a snack they enjoy, suggest 2-4 similar snacks they might like. Explain why each recommendation matches their preferences.",
+      "intermediate_steps": [],
+      "metadata": {
+        "model_version": "claude-sonnet-4",
+        "latency_ms": 1200,
+        "token_count": 145,
+        "timestamp": "2025-01-15T10:54:00Z"
+      }
+    },
+    {
+      "id": "trace_026",
+      "user_input": "I want savory snacks that aren't chips",
+      "agent_output": "Savory non-chip snacks:\n\n1. **Roasted chickpeas** - Crunchy, high protein\n2. **Seaweed snacks** - Umami flavor, low calorie\n3. **Pickles** - Tangy, virtually zero calories\n4. **Olives** - Salty, Mediterranean flavor\n5. **Edamame** - Protein-rich, lightly salted",
+      "system_prompt": "You are a helpful snack recommendation assistant. When users describe a snack they enjoy, suggest 2-4 similar snacks they might like. Explain why each recommendation matches their preferences.",
+      "intermediate_steps": [],
+      "metadata": {
+        "model_version": "claude-sonnet-4",
+        "latency_ms": 1100,
+        "token_count": 130,
+        "timestamp": "2025-01-15T10:55:00Z"
+      }
+    },
+    {
+      "id": "trace_027",
+      "user_input": "What snacks are good for runners?",
+      "agent_output": "Runner-friendly snacks:\n\n1. **Bananas** - Quick carbs, potassium prevents cramps\n2. **Energy gels** - Fast-absorbing carbs for long runs\n3. **Honey stinger waffles** - Easy to digest carbs\n4. **Dates** - Natural sugars for endurance\n5. **Rice cakes with nut butter** - Carbs plus protein for recovery",
+      "system_prompt": "You are a helpful snack recommendation assistant. When users describe a snack they enjoy, suggest 2-4 similar snacks they might like. Explain why each recommendation matches their preferences.",
+      "intermediate_steps": [],
+      "metadata": {
+        "model_version": "claude-sonnet-4",
+        "latency_ms": 1150,
+        "token_count": 135,
+        "timestamp": "2025-01-15T10:56:00Z"
+      }
+    },
+    {
+      "id": "trace_028",
+      "user_input": "I'm craving something crunchy and buttery",
+      "agent_output": "Buttery crunchy snacks:\n\n1. **Butter crackers (Ritz, Club)** - Classic buttery crunch\n2. **Butter popcorn** - Movie theater style at home\n3. **Shortbread cookies** - Rich, buttery, crisp\n4. **Butter pretzels** - Synder's makes excellent ones\n5. **Puff pastry cheese straws** - Buttery, flaky, savory",
+      "system_prompt": "You are a helpful snack recommendation assistant. When users describe a snack they enjoy, suggest 2-4 similar snacks they might like. Explain why each recommendation matches their preferences.",
+      "intermediate_steps": [],
+      "metadata": {
+        "model_version": "claude-sonnet-4",
+        "latency_ms": 1100,
+        "token_count": 125,
+        "timestamp": "2025-01-15T10:57:00Z"
+      }
+    },
+    {
+      "id": "trace_029",
+      "user_input": "Best protein snacks for building muscle?",
+      "agent_output": "Muscle-building protein snacks:\n\n1. **Greek yogurt (20g protein per cup)** - Add berries for carbs\n2. **Protein bars (20g+ protein)** - Quest, RXBar, ONE\n3. **Beef jerky** - Lean protein, very portable\n4. **Cottage cheese** - 14g protein per half cup\n5. **Protein shakes** - 25-30g protein, fast absorption",
+      "system_prompt": "You are a helpful snack recommendation assistant. When users describe a snack they enjoy, suggest 2-4 similar snacks they might like. Explain why each recommendation matches their preferences.",
+      "intermediate_steps": [],
+      "metadata": {
+        "model_version": "claude-sonnet-4",
+        "latency_ms": 1200,
+        "token_count": 145,
+        "timestamp": "2025-01-15T10:58:00Z"
+      }
+    },
+    {
+      "id": "trace_030",
+      "user_input": "What can I snack on that won't make me thirsty?",
+      "agent_output": "Low-sodium snacks that won't make you thirsty:\n\n1. **Fresh fruit** - Hydrating, naturally low sodium\n2. **Unsalted nuts** - Protein without the salt\n3. **Yogurt** - Creamy, naturally low sodium\n4. **Cheese (Swiss, mozzarella)** - Lower sodium than cheddar\n5. **Smoothies** - Hydrating and filling",
+      "system_prompt": "You are a helpful snack recommendation assistant. When users describe a snack they enjoy, suggest 2-4 similar snacks they might like. Explain why each recommendation matches their preferences.",
+      "intermediate_steps": [],
+      "metadata": {
+        "model_version": "claude-sonnet-4",
+        "latency_ms": 1100,
+        "token_count": 135,
+        "timestamp": "2025-01-15T10:59:00Z"
+      }
+    },
+    {
+      "id": "trace_031",
+      "user_input": "I love gummy candy. Healthier alternatives?",
+      "agent_output": "Healthier gummy alternatives:\n\n1. **Fruit leather** - Made from real fruit puree\n2. **Dried mango** - Natural chewiness, no added sugar\n3. **Smart Sweets** - Low sugar gummies with fiber\n4. **Frozen grapes** - Natural sweetness, gummy-like texture\n5. **Date paste candy** - Naturally sweet, whole food",
+      "system_prompt": "You are a helpful snack recommendation assistant. When users describe a snack they enjoy, suggest 2-4 similar snacks they might like. Explain why each recommendation matches their preferences.",
+      "intermediate_steps": [],
+      "metadata": {
+        "model_version": "claude-sonnet-4",
+        "latency_ms": 1050,
+        "token_count": 125,
+        "timestamp": "2025-01-15T11:00:00Z"
+      }
+    },
+    {
+      "id": "trace_032",
+      "user_input": "What's good for late night munchies?",
+      "agent_output": "Late night snacks that won't disrupt sleep:\n\n1. **Chamomile tea with honey** - Calming, lightly sweet\n2. **Banana with almond butter** - Magnesium aids sleep\n3. **Whole grain crackers with cheese** - Carbs help tryptophan absorption\n4. **Tart cherry juice** - Natural melatonin\n5. **Small bowl of oatmeal** - Warm, comforting, sleep-promoting",
+      "system_prompt": "You are a helpful snack recommendation assistant. When users describe a snack they enjoy, suggest 2-4 similar snacks they might like. Explain why each recommendation matches their preferences.",
+      "intermediate_steps": [],
+      "metadata": {
+        "model_version": "claude-sonnet-4",
+        "latency_ms": 1200,
+        "token_count": 140,
+        "timestamp": "2025-01-15T11:01:00Z"
+      }
+    },
+    {
+      "id": "trace_033",
+      "user_input": "I want something with omega-3s",
+      "agent_output": "Omega-3 rich snacks:\n\n1. **Walnuts** - Highest omega-3 of any nut\n2. **Chia seed pudding** - 5g omega-3 per serving\n3. **Smoked salmon on crackers** - Rich in EPA and DHA\n4. **Flax crackers** - Crunchy omega-3 delivery\n5. **Sardines** - Portable omega-3 powerhouse",
+      "system_prompt": "You are a helpful snack recommendation assistant. When users describe a snack they enjoy, suggest 2-4 similar snacks they might like. Explain why each recommendation matches their preferences.",
+      "intermediate_steps": [],
+      "metadata": {
+        "model_version": "claude-sonnet-4",
+        "latency_ms": 1100,
+        "token_count": 125,
+        "timestamp": "2025-01-15T11:02:00Z"
+      }
+    },
+    {
+      "id": "trace_034",
+      "user_input": "Looking for iron-rich snacks for energy",
+      "agent_output": "Iron-rich energy snacks:\n\n1. **Pumpkin seeds** - 4mg iron per ounce\n2. **Dark chocolate** - 3mg iron per ounce plus energy boost\n3. **Dried apricots** - Natural iron plus vitamin C for absorption\n4. **Beef jerky** - Heme iron absorbs easily\n5. **Fortified cereal** - Many contain 100% daily iron",
+      "system_prompt": "You are a helpful snack recommendation assistant. When users describe a snack they enjoy, suggest 2-4 similar snacks they might like. Explain why each recommendation matches their preferences.",
+      "intermediate_steps": [],
+      "metadata": {
+        "model_version": "claude-sonnet-4",
+        "latency_ms": 1150,
+        "token_count": 135,
+        "timestamp": "2025-01-15T11:03:00Z"
+      }
+    },
+    {
+      "id": "trace_035",
+      "user_input": "What are some probiotic snacks?",
+      "agent_output": "Probiotic-rich snacks:\n\n1. **Greek yogurt** - Live active cultures for gut health\n2. **Kefir** - Drinkable yogurt with more probiotic strains\n3. **Kimchi** - Korean fermented vegetables\n4. **Kombucha** - Fermented tea drink\n5. **Sauerkraut** - Fermented cabbage, naturally tangy",
+      "system_prompt": "You are a helpful snack recommendation assistant. When users describe a snack they enjoy, suggest 2-4 similar snacks they might like. Explain why each recommendation matches their preferences.",
+      "intermediate_steps": [],
+      "metadata": {
+        "model_version": "claude-sonnet-4",
+        "latency_ms": 1050,
+        "token_count": 120,
+        "timestamp": "2025-01-15T11:04:00Z"
+      }
+    },
+    {
+      "id": "trace_036",
+      "user_input": "Best snacks for fighting afternoon slump?",
+      "agent_output": "Energy-sustaining afternoon snacks:\n\n1. **Apple with peanut butter** - Fiber, protein, healthy fats\n2. **Trail mix** - Mix of carbs, protein, healthy fats\n3. **Hummus with veggies** - Complex carbs plus protein\n4. **Greek yogurt with granola** - Protein prevents crash\n5. **Dark chocolate covered espresso beans** - Caffeine plus antioxidants",
+      "system_prompt": "You are a helpful snack recommendation assistant. When users describe a snack they enjoy, suggest 2-4 similar snacks they might like. Explain why each recommendation matches their preferences.",
+      "intermediate_steps": [],
+      "metadata": {
+        "model_version": "claude-sonnet-4",
+        "latency_ms": 1200,
+        "token_count": 145,
+        "timestamp": "2025-01-15T11:05:00Z"
+      }
+    },
+    {
+      "id": "trace_037",
+      "user_input": "I want Mediterranean-style snacks",
+      "agent_output": "Mediterranean snacks:\n\n1. **Hummus with pita bread** - Classic Middle Eastern combo\n2. **Olives and feta cheese** - Salty, savory Greek snack\n3. **Baba ganoush with vegetables** - Smoky eggplant dip\n4. **Stuffed grape leaves (dolmas)** - Portable, flavorful\n5. **Tzatziki with cucumber slices** - Cool, refreshing, protein-rich",
+      "system_prompt": "You are a helpful snack recommendation assistant. When users describe a snack they enjoy, suggest 2-4 similar snacks they might like. Explain why each recommendation matches their preferences.",
+      "intermediate_steps": [],
+      "metadata": {
+        "model_version": "claude-sonnet-4",
+        "latency_ms": 1150,
+        "token_count": 135,
+        "timestamp": "2025-01-15T11:06:00Z"
+      }
+    },
+    {
+      "id": "trace_038",
+      "user_input": "What are some Asian-inspired snacks?",
+      "agent_output": "Asian-inspired snacks:\n\n1. **Seaweed snacks (nori)** - Crispy, umami, low calorie\n2. **Rice crackers** - Light, crunchy, savory\n3. **Edamame** - Steamed soybeans, protein-rich\n4. **Wasabi peas** - Spicy crunch\n5. **Mochi** - Chewy rice cakes in various flavors",
+      "system_prompt": "You are a helpful snack recommendation assistant. When users describe a snack they enjoy, suggest 2-4 similar snacks they might like. Explain why each recommendation matches their preferences.",
+      "intermediate_steps": [],
+      "metadata": {
+        "model_version": "claude-sonnet-4",
+        "latency_ms": 1100,
+        "token_count": 125,
+        "timestamp": "2025-01-15T11:07:00Z"
+      }
+    },
+    {
+      "id": "trace_039",
+      "user_input": "Looking for calcium-rich snacks",
+      "agent_output": "Calcium-rich snacks:\n\n1. **Greek yogurt** - 200mg calcium per serving\n2. **String cheese** - 200mg calcium, portable\n3. **Fortified almond milk latte** - 450mg calcium\n4. **Sardines on crackers** - Bones contain calcium\n5. **Chia seed pudding** - 180mg calcium per serving",
+      "system_prompt": "You are a helpful snack recommendation assistant. When users describe a snack they enjoy, suggest 2-4 similar snacks they might like. Explain why each recommendation matches their preferences.",
+      "intermediate_steps": [],
+      "metadata": {
+        "model_version": "claude-sonnet-4",
+        "latency_ms": 1050,
+        "token_count": 125,
+        "timestamp": "2025-01-15T11:08:00Z"
+      }
+    },
+    {
+      "id": "trace_040",
+      "user_input": "What can I eat that's both sweet AND salty?",
+      "agent_output": "Sweet and salty combinations:\n\n1. **Chocolate covered pretzels** - Classic combo\n2. **Salted caramel anything** - Popcorn, nuts, chocolates\n3. **Kettle corn** - Perfectly balanced sweet-salty popcorn\n4. **Peanut butter filled pretzels** - Sweet filling, salty shell\n5. **Trail mix with M&Ms** - Mix of sweet chocolate and salty nuts",
+      "system_prompt": "You are a helpful snack recommendation assistant. When users describe a snack they enjoy, suggest 2-4 similar snacks they might like. Explain why each recommendation matches their preferences.",
+      "intermediate_steps": [],
+      "metadata": {
+        "model_version": "claude-sonnet-4",
+        "latency_ms": 1150,
+        "token_count": 135,
+        "timestamp": "2025-01-15T11:09:00Z"
+      }
+    },
+    {
+      "id": "trace_041",
+      "user_input": "I need something that travels well in hot weather",
+      "agent_output": "Heat-stable snacks:\n\n1. **Nuts and seeds** - Won't melt or spoil\n2. **Dried fruit** - Naturally preserved\n3. **Pretzels** - Stay crispy, don't spoil\n4. **Granola bars** - Most are heat-stable\n5. **Jerky** - Preserved meat, no refrigeration needed",
+      "system_prompt": "You are a helpful snack recommendation assistant. When users describe a snack they enjoy, suggest 2-4 similar snacks they might like. Explain why each recommendation matches their preferences.",
+      "intermediate_steps": [],
+      "metadata": {
+        "model_version": "claude-sonnet-4",
+        "latency_ms": 1050,
+        "token_count": 120,
+        "timestamp": "2025-01-15T11:10:00Z"
+      }
+    },
+    {
+      "id": "trace_042",
+      "user_input": "What are good snacks for kids' sports games?",
+      "agent_output": "Sports game snacks for kids:\n\n1. **Orange slices** - Hydrating, vitamin C, easy to share\n2. **Granola bars** - Quick energy between games\n3. **String cheese** - Protein for recovery\n4. **Banana** - Potassium prevents cramps\n5. **Goldfish crackers** - Kid favorite, not too heavy",
+      "system_prompt": "You are a helpful snack recommendation assistant. When users describe a snack they enjoy, suggest 2-4 similar snacks they might like. Explain why each recommendation matches their preferences.",
+      "intermediate_steps": [],
+      "metadata": {
+        "model_version": "claude-sonnet-4",
+        "latency_ms": 1100,
+        "token_count": 130,
+        "timestamp": "2025-01-15T11:11:00Z"
+      }
+    },
+    {
+      "id": "trace_043",
+      "user_input": "I want something indulgent but portion-controlled",
+      "agent_output": "Portion-controlled indulgences:\n\n1. **Mini ice cream bars** - 100-150 calories, satisfying\n2. **Single-serve chocolate squares** - Ghirardelli, Lindt\n3. **100-calorie snack packs** - Cookies, chips, pretzels\n4. **Mini candy bars** - Halloween-size treats\n5. **Individual pudding cups** - Creamy, pre-portioned",
+      "system_prompt": "You are a helpful snack recommendation assistant. When users describe a snack they enjoy, suggest 2-4 similar snacks they might like. Explain why each recommendation matches their preferences.",
+      "intermediate_steps": [],
+      "metadata": {
+        "model_version": "claude-sonnet-4",
+        "latency_ms": 1050,
+        "token_count": 125,
+        "timestamp": "2025-01-15T11:12:00Z"
+      }
+    },
+    {
+      "id": "trace_044",
+      "user_input": "Best snacks for long flights?",
+      "agent_output": "Airplane-friendly snacks:\n\n1. **Protein bars** - TSA-approved, filling\n2. **Mixed nuts** - Bring your own (pricey on flights)\n3. **Dried fruit** - Won't get crushed in bag\n4. **Dark chocolate** - Non-melty, mood-boosting\n5. **Instant oatmeal packets** - Ask for hot water on board",
+      "system_prompt": "You are a helpful snack recommendation assistant. When users describe a snack they enjoy, suggest 2-4 similar snacks they might like. Explain why each recommendation matches their preferences.",
+      "intermediate_steps": [],
+      "metadata": {
+        "model_version": "claude-sonnet-4",
+        "latency_ms": 1150,
+        "token_count": 130,
+        "timestamp": "2025-01-15T11:13:00Z"
+      }
+    },
+    {
+      "id": "trace_045",
+      "user_input": "What can I snack on that's good for my skin?",
+      "agent_output": "Skin-healthy snacks:\n\n1. **Almonds** - Vitamin E for skin protection\n2. **Carrots with hummus** - Beta-carotene for glow\n3. **Berries** - Antioxidants fight aging\n4. **Avocado** - Healthy fats for moisture\n5. **Dark chocolate (70%+)** - Flavonoids protect skin",
+      "system_prompt": "You are a helpful snack recommendation assistant. When users describe a snack they enjoy, suggest 2-4 similar snacks they might like. Explain why each recommendation matches their preferences.",
+      "intermediate_steps": [],
+      "metadata": {
+        "model_version": "claude-sonnet-4",
+        "latency_ms": 1050,
+        "token_count": 120,
+        "timestamp": "2025-01-15T11:14:00Z"
+      }
+    },
+    {
+      "id": "trace_046",
+      "user_input": "I want snacks that boost mood",
+      "agent_output": "Mood-boosting snacks:\n\n1. **Dark chocolate** - Stimulates endorphins\n2. **Bananas** - Tryptophan converts to serotonin\n3. **Walnuts** - Omega-3s support brain health\n4. **Greek yogurt** - Probiotics affect mood via gut-brain axis\n5. **Berries** - Antioxidants reduce inflammation",
+      "system_prompt": "You are a helpful snack recommendation assistant. When users describe a snack they enjoy, suggest 2-4 similar snacks they might like. Explain why each recommendation matches their preferences.",
+      "intermediate_steps": [],
+      "metadata": {
+        "model_version": "claude-sonnet-4",
+        "latency_ms": 1100,
+        "token_count": 125,
+        "timestamp": "2025-01-15T11:15:00Z"
+      }
+    },
+    {
+      "id": "trace_047",
+      "user_input": "What are some budget-friendly healthy snacks?",
+      "agent_output": "Affordable healthy snacks:\n\n1. **Bananas** - Cheapest fruit, filling\n2. **Popcorn kernels** - Pennies per serving when air-popped\n3. **Carrots** - Bulk bags are very cheap\n4. **Eggs** - Hard boil a dozen for the week\n5. **Oatmeal** - Add fruit or honey for variety",
+      "system_prompt": "You are a helpful snack recommendation assistant. When users describe a snack they enjoy, suggest 2-4 similar snacks they might like. Explain why each recommendation matches their preferences.",
+      "intermediate_steps": [],
+      "metadata": {
+        "model_version": "claude-sonnet-4",
+        "latency_ms": 1050,
+        "token_count": 120,
+        "timestamp": "2025-01-15T11:16:00Z"
+      }
+    },
+    {
+      "id": "trace_048",
+      "user_input": "Looking for fall/autumn themed snacks",
+      "agent_output": "Autumn-inspired snacks:\n\n1. **Pumpkin seeds (roasted with cinnamon)** - Seasonal and crunchy\n2. **Apple cider** - Warm, spiced, comforting\n3. **Caramel apples** - Classic fall treat\n4. **Cinnamon roasted chickpeas** - Cozy spice\n5. **Pumpkin bread or muffins** - Seasonal baking",
+      "system_prompt": "You are a helpful snack recommendation assistant. When users describe a snack they enjoy, suggest 2-4 similar snacks they might like. Explain why each recommendation matches their preferences.",
+      "intermediate_steps": [],
+      "metadata": {
+        "model_version": "claude-sonnet-4",
+        "latency_ms": 1100,
+        "token_count": 125,
+        "timestamp": "2025-01-15T11:17:00Z"
+      }
+    },
+    {
+      "id": "trace_049",
+      "user_input": "What can I make quickly when I'm really hungry?",
+      "agent_output": "Quick satisfying snacks (under 5 minutes):\n\n1. **Peanut butter on toast** - 2 minutes\n2. **Microwave quesadilla** - 1 minute\n3. **Instant oatmeal** - 3 minutes\n4. **Tuna from can on crackers** - 2 minutes\n5. **Protein shake** - 1 minute to blend",
+      "system_prompt": "You are a helpful snack recommendation assistant. When users describe a snack they enjoy, suggest 2-4 similar snacks they might like. Explain why each recommendation matches their preferences.",
+      "intermediate_steps": [],
+      "metadata": {
+        "model_version": "claude-sonnet-4",
+        "latency_ms": 1000,
+        "token_count": 120,
+        "timestamp": "2025-01-15T11:18:00Z"
+      }
+    },
+    {
+      "id": "trace_050",
+      "user_input": "I need snacks that won't make a mess in my car",
+      "agent_output": "Clean car snacks:\n\n1. **Granola bars** - Wrapped, no crumbs\n2. **Bananas** - No utensils needed, biodegradable peel\n3. **String cheese** - Individually wrapped, no mess\n4. **Protein bars** - Tidy and filling\n5. **Whole apples** - Eat around the core, no cleanup",
+      "system_prompt": "You are a helpful snack recommendation assistant. When users describe a snack they enjoy, suggest 2-4 similar snacks they might like. Explain why each recommendation matches their preferences.",
+      "intermediate_steps": [],
+      "metadata": {
+        "model_version": "claude-sonnet-4",
+        "latency_ms": 1050,
+        "token_count": 120,
+        "timestamp": "2025-01-15T11:19:00Z"
+      }
+    }
+  ]
+}
