@@ -1,10 +1,10 @@
 # EvalSwipe - AI Trace Review Application
 
-A lightweight, Tinder-inspired web application designed to streamline the evaluation of AI system traces through systematic open and axial coding methodologies.
+A lightweight web application designed to streamline the evaluation of AI system traces through systematic open and axial coding methodologies.
 
 ## Features
 
-- **Tinder-Style Review Interface**: Swipe through AI traces with intuitive gestures and keyboard shortcuts
+- **Swipe-based Review Interface**: Swipe through AI traces with intuitive gestures and keyboard shortcuts
 - **Open & Axial Coding**: Systematic failure categorization using grounded theory methodology
 - **Prompt Improvement**: AI-powered suggestions for improving system prompts based on failure patterns
 - **Braintrust Integration**: Seamless import/export of traces and annotations
